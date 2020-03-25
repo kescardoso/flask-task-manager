@@ -23,7 +23,7 @@ def get_tasks():
 
 @app.route('/add_task')
 def add_task():
-    return render_template('addtask.html')
+    return render_template('addtask.html', categories=mongo.db.categories.find())
 
 
 if __name__ == '__main__':
