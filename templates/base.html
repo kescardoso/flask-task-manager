@@ -7,11 +7,12 @@
 
     <title>Base</title>
 
-    <!-- Fonts/Icons -->
+    <!-- Materialize Fonts/Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/>
 </head>
 <body>
      <h2>Kika Task Manager</h2>
@@ -46,7 +47,6 @@
         document.getElementById("matfix").addEventListener("click", function(e) {
 	        e.stopPropagation();
         });
-    </script>
-    
+    </script>   
 </body>
 </html>
