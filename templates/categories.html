@@ -5,7 +5,7 @@
     <div class="row">
 
         <h3>Categories</h3>
-
+        <!-- Sart: Categories List -->
         <ul class="collapsible" data-collapsible="accordion">
             {% for category in categories %}
             <li>
@@ -22,7 +22,7 @@
             </li>
             {% endfor %}
         </ul>
-
+    <!-- Button: Add new category -->
     </div>
     <div class="row">
         <a href="{{url_for('add_category')}}" class="waves-effect waves-light btn">
